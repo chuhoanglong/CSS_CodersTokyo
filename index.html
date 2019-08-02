@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- IDEA: link icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Content here -->
+    <div class="container-fluid">
+      <!-- header -->
+      <div class="row">
+       
+        <!-- IDEA: end header -->
+      </div>
+
+      <!-- IDEA: start row for info Item -->
+      <div class="row">
+        <!-- IDEA: component left -->
+        <div class="col-md-1">
+            <div class="d-flex flex-column">
+              <div class="product-gallery-thumb"><a class="product-gallery-thumb-placeholder" href="#"><img src="./image/airpods.jpg" alt="not Image"></a></div>
+              <div class="product-gallery-thumb"><a class="product-gallery-thumb-placeholder" href="#"><img src="./image/airpods1.jpg" alt="not Image"></a></div>
+              <div class="product-gallery-thumb"><a class="product-gallery-thumb-placeholder" href="#"><img src="./image/airpods2.jpg" alt="not Image"></a></div>
+            </div>
+        <!-- IDEA: end component left -->
+        </div>
+        <!-- IDEA: image selector position center -->
+        <div class="col-md-4">
+          <div><img style="width:290px; height:350px" src="./image/airpods.jpg" alt="not Image"></div>
+          <!-- IDEA: end center -->
+        </div>
+        <!-- IDEA: info item position right -->
+        <div class="col-md-3">
+          <!-- IDEA: start name item + mã sản phẩm -->
+          <div class="nameItem"><h3  id="nameItem">Airpods <span class="badge badge-secondary"> New</span></h3></div>
+          <div class="idItem d-flex flex-row text-black-50">
+            <div><h6>SKU:</h6></div>
+            <div><h6 id="idItem">AIR2</h6></div>
+            <!-- IDEA: kết thúc mã sản phẩm -->
+          </div>
+          <!-- IDEA: vạch kẻ ngang -->
+          <div class="border border-light" style="width:80%;height:1px;"></div>
+
+          <!-- IDEA: start priceItem -->
+          <div class="priceItem">
+            <h4 id="priceItem">4.500.000</h4>
+            <p style="font-style:italic; font-size:11px; color:#AAA">Miễn phí giao hàng thu tiền ( COD free )</p>
+
+          </div><!-- IDEA: end priceItem -->
+          <!-- IDEA: start button quantity -->
+          <div class="quantity-area clearflix d-flex flex-row">
+            <div><input type="button" value="-" onclick="" class="qty-btn"></div>
+            <div><input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector" size="2" style="text-align: center"></div>
+            <div><input type="button" value="+" onclick="plusQuantity()" class="qty-btn"></div>
+
+          </div><!-- IDEA: end button quantity-->
+          <br>
+          <!-- IDEA: vạch kẻ ngang -->
+          <div class="border border-light" style="width:80%;height:1px;"></div>
+          <br>
+          <!-- IDEA: start button addtocart -->
+          <div>
+            <button type="button" id="add-to-cart" class="btn-addtocart" name="add">Thêm vào giỏ</button>
+            <i class="fas fa-shopping-cart fa-sm"></i>
+          </div><!-- IDEA: end -->
+        </div> <!-- IDEA:end info item position right -->
+        <div class="col-md-4">
+          <!-- IDEA: start describe(mô tả) details(chi tiết) for item -->
+          <div class="describe card border-light mb-3" style="max-width: 18rem">
+            <div class="card-header">Thông số kỹ thuật</div>
+            <ul class="list-group list-group-flush" style="line-height:1px; font-size: 13px">
+              <li class="list-group-item">
+                <h6 class="card-title">Kich thước:</h6>
+                <p class="card-text">	- AirPods: 16.5 x 18.0 x 40.5 mm</p>
+                <p class="card-text">- Hộp đựng: 44.3 x 21.3 x 53.5 mm</p>
+              </li>
+              <li class="list-group-item">
+                <h6 class="card-title">Trọng Lượng:</h6>
+                <p class="card-text">	- Airpods: AirPods: 4g </p>
+                <p class="card-text"> - Hộp đựng: 40g </p>
+              </li>
+              <li class="list-group-item">
+                <h6 class="card-title">Pin:</h6>
+                <p class="card-text">- Airpods: 5 giờ chơi nhạc, 3 giờ gọi thoại</p>
+                <p class="card-text">- Hộp đựng: Đến 24h</p>
+              </li>
+              <li class="list-group-item">
+                <h6 class="card-title">Các tính năng khác:</h6>
+                <p class="card-text">- Hỗ trợ Hey Siri, con chip H1 mới</p>
+              </li>
+
+
+            </ul>
+          </div><!-- IDEA: end describe(mô tả) details(chi tiết) for item -->
+        </div>
+      </div> <!-- IDEA: end row for info Item -->
+      <br>
+      <!-- IDEA: vạch kẻ ngang -->
+      <div class="border border-light" style="width:100%;height:1px;"></div>
+      <br>
+    </div>
+</body>
+</html>
